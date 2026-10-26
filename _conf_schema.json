@@ -1,0 +1,32 @@
+{
+  "enabled": {
+    "type": "bool",
+    "description": "总开关",
+    "default": true,
+    "hint": "关掉就恢复成每条消息都单独处理。"
+  },
+  "window_seconds": {
+    "type": "float",
+    "description": "合并窗口（秒）",
+    "default": 4.0,
+    "hint": "收到消息后等这么久，期间又来新消息就继续等。4 秒比较自然，打字慢可以调到 6。"
+  },
+  "recall_skip": {
+    "type": "bool",
+    "description": "撤回的消息不回复",
+    "default": true,
+    "hint": "开着的时候，你在窗口内撤回的那条会从缓冲里剔掉；整批都撤回就不回。关掉则照常回复。"
+  },
+  "include_group": {
+    "type": "bool",
+    "description": "群聊也生效",
+    "default": false,
+    "hint": "默认只处理私聊。群里开这个要谨慎，会把你连发的几句也合并。"
+  },
+  "debug_log": {
+    "type": "bool",
+    "description": "写调试日志",
+    "default": false,
+    "hint": "开启后会在 data/plugin_data/astrbot_plugin_chat_pacer/pacer.log 记录撤回事件，排查用。"
+  }
+}

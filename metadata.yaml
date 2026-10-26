@@ -1,0 +1,7 @@
+name: "astrbot_plugin_chat_pacer"
+display_name: "聊天节奏"
+desc: "私聊消息防抖合并：连发几句先攒着，窗口内没新消息了再合成一条交给 LLM，只回一次；被撤回的消息不计入"
+help: "装上即生效，无需指令。窗口时长在插件配置里调。"
+version: "0.1.0"
+author: "JC"
+repo: ""
